@@ -58,7 +58,6 @@
     },
     "rules": {}
   },
-  "license": "MIT",
   "browserslist": [
     "> 1%",
     "last 2 versions",
@@ -66,6 +65,13 @@
   ],
   "dependencies": {},
   "description": "#Yakoue's MJML Drag & Drop email builder component for vuejs",
+  "author": {
+    "name": "Yakoue",
+    "contact": "contact@yakoue.com"
+  },
+  "homepage": "https://github.com/yakoue/vue-email-builder#readme",
+  "license": "MIT",
+  "repository": "https://github.com/yakoue/vue-email-builder.git",
   "keywords": [
     "vue",
     "drag-and-drop",
@@ -77,6 +83,5 @@
     "html-email",
     "mjml",
     "yakoue"
-  ],
-  "author": "Yakoue"
+  ]
 }

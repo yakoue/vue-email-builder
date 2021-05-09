@@ -120,24 +120,6 @@ export default {
 | **toolsDefaultValues**<br/>_object_ | No       | You can pass default tools properties here.                                                          |
 | **callbacks** <br/>_array_          | No       | Array of callbacks functions                                                                         |
 
-### Compiles and hot-reloads for development
-
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-
-```
-yarn build
-```
-
-### Lints and fixes files
-
-```
-yarn lint
-```
-
 ### Customize configuration
 
 See [Configuration Reference](https://cli.vuejs.org/config/).

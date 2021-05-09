@@ -1,6 +1,6 @@
 {
   "name": "@yakoue/vue-email-builder",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "private": false,
   "main": "./dist/vue-email-builder.umd.js",
   "scripts": {
@@ -38,7 +38,11 @@
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^21.0.0",
     "vue-eslint-parser": "7.6.0",
-    "vue-template-compiler": "2.6.12"
+    "vue-template-compiler": "2.6.12",
+    "bootstrap": "^5.0.0",
+    "bootstrap-vue": "^2.21.2",
+    "load-script": "^1.0.0",
+    "vue": "^2.6.12"
   },
   "eslintConfig": {
     "root": true,
@@ -60,19 +64,19 @@
     "last 2 versions",
     "not dead"
   ],
-  "dependencies": {
-    "bootstrap": "^5.0.0",
-    "bootstrap-vue": "^2.21.2",
-    "load-script": "^1.0.0",
-    "vue": "^2.6.12"
-  },
-  "description": "## Project setup ``` yarn install ```",
+  "dependencies": {},
+  "description": "#Yakoue's MJML Drag & Drop email builder component for vuejs",
   "keywords": [
     "vue",
-    "email",
-    "mjml",
+    "drag-and-drop",
+    "template",
+    "builder",
     "editor",
-    "builder"
+    "email-marketing",
+    "email-template",
+    "html-email",
+    "mjml",
+    "yakoue"
   ],
   "author": "Yakoue"
 }

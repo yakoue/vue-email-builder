@@ -1,7 +1,12 @@
 <template>
   <div id="demo">
     <b-container
-      style="padding-left: 20px; padding-right: 20px; over-flow: hidden"
+      style="
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        over-flow: hidden;
+      "
     >
       <b-row>
         <b-col cols="9">
@@ -36,7 +41,7 @@
 
 <script>
 import { YakoueEditor } from '../components'
-import templateData from '../data/template1.js'
+import templateData from '../data/template2.json.js'
 import logo from '../assets/logo.png'
 export default {
   name: 'Example',
@@ -63,8 +68,9 @@ export default {
       this.instance.addEvent('onSave', (design) => {
         console.log('saveDesign', JSON.stringify(design, null, 2))
       })
+      this.instance.setTemplate(templateData)
     },
-    saveDesign() {
+    saveTemplate() {
       // console.log(' template ' + JSON.stringify(templateData, null, 2))
 
       this.instance.save()

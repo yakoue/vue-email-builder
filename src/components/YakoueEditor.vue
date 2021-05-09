@@ -12,7 +12,7 @@ export default {
   props: {
     editorUrl: {
       type: String,
-      default: 'http://localhost/iframe/embed.js', // 'https://editor.yakoue.com/embed.js', //
+      default: 'https://editor.yakoue.com/embed.js', // 'http://localhost/iframe/embed.js', //
     },
     config: {
       type: Object,

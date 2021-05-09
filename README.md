@@ -90,7 +90,6 @@ export default {
 
 | Method           | Param             | description                                             |
 | ---------------- | ----------------- | ------------------------------------------------------- |
-| **load**         | Builder Instance  | Callback function on builder load                       |
 | **setTemplate**  | template          | Take the template and load it to the builder            |
 | **saveTemplate** | Function callback | Returns the design JSON and HTML in a callback function |
 | **exportHtml**   | Function callback | Returns the design HTML in a callback function          |
@@ -98,7 +97,9 @@ export default {
 ## Properties
 
 **template** _object_ or _string_ You can set MJML Json on MJML XML as string to this props
+
 **config** _object_ You can use this props to config and customize the builder
+
 **onLoad** _function callback_ You can use this to set call back function on builder load
 
 ### Configuration Options

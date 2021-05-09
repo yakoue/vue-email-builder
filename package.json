@@ -1,24 +1,44 @@
 {
-  "name": "vue-yakoue",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@yakoue/vue-email-builder",
+  "version": "0.0.1",
+  "private": false,
+  "main": "./dist/vue-email-builder.umd.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build-bundle": "vue-cli-service build --target lib --name vue-email-builder ./src/components/index.js",
+    "release": "npm run build-bundle && npm publish --acces public"
   },
-  "dependencies": {
-    "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+  "peerDependencies": {
+    "load-script": "^1.0.0",
+    "vue": ">=2"
   },
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
   "devDependencies": {
+    "@rollup/plugin-commonjs": "11.1.0",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
+    "core-js": "3.6.5",
+    "eslint": "^7.24.0",
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-vue": "^7.9.0",
+    "prettier": "^2.2.1",
+    "prettier-linter-helpers": "^1.0.0",
+    "stylelint": "^13.12.0",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^21.0.0",
+    "vue-eslint-parser": "7.6.0",
+    "vue-template-compiler": "2.6.12"
   },
   "eslintConfig": {
     "root": true,
@@ -34,9 +54,25 @@
     },
     "rules": {}
   },
+  "license": "MIT",
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "dependencies": {
+    "bootstrap": "^5.0.0",
+    "bootstrap-vue": "^2.21.2",
+    "load-script": "^1.0.0",
+    "vue": "^2.6.12"
+  },
+  "description": "## Project setup ``` yarn install ```",
+  "keywords": [
+    "vue",
+    "email",
+    "mjml",
+    "editor",
+    "builder"
+  ],
+  "author": "Yakoue"
 }

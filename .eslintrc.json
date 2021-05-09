@@ -1,0 +1,27 @@
+{
+    "extends": [
+        "prettier",
+        "plugin:prettier/recommended",
+        "plugin:vue/recommended",
+        "plugin:vue/base"
+      ],
+    
+      "plugins": ["prettier"],
+    
+      "rules": {
+        "prettier/prettier": [
+          "error",
+          {
+            "endOfLine": "auto"
+          }
+        ]
+      },
+      "parserOptions": {
+        "parser": "babel-eslint",
+        "ecmaFeatures": {
+          "jsx": true,
+          "modules": true
+        }
+      }
+  }
+  
